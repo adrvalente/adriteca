@@ -1,4 +1,3 @@
-````markdown
 # 📚 AdriTeca
 
 <p align="center">
