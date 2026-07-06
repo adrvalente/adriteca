@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ````markdown
 # 📚 AdriTeca
 
@@ -503,3 +504,105 @@ Feel free to use it for educational purposes.
 
 ⭐ If you found this project useful, consider giving it a **Star**.
 ````
+=======
+AdriTeca 📚
+
+Sistema de gestão de biblioteca em PHP + MySQL (Livros, Autores, Leitores e Empréstimos).
+
+O que é preciso instalar
+
+Só é preciso um programa: um servidor local com PHP + MySQL/MariaDB. O mais simples é o XAMPP.
+
+
+Windows/Mac/Linux: https://www.apachefriends.org/pt_BR/index.html
+
+
+(Se já tiveres o WAMP, MAMP ou o Laragon instalado, também serve — os passos são muito parecidos.)
+
+Passo a passo (XAMPP)
+
+1. Instalar o XAMPP
+
+Descarrega e instala o XAMPP normalmente (Next, Next, Finish).
+
+2. Copiar o projeto para a pasta certa
+
+Copia a pasta inteira do projeto (AdriTeca) para dentro da pasta htdocs do XAMPP:
+
+
+Windows: C:\xampp\htdocs\AdriTeca
+Mac: /Applications/XAMPP/htdocs/AdriTeca
+Linux: /opt/lampp/htdocs/AdriTeca
+
+
+No final deves ter, por exemplo, C:\xampp\htdocs\AdriTeca\index.php.
+
+3. Ligar o Apache e o MySQL
+
+Abre o XAMPP Control Panel e clica em Start nas linhas:
+
+
+Apache
+MySQL
+
+
+Ambos devem ficar com fundo verde.
+
+4. Criar a base de dados
+
+
+Abre o navegador e vai a: http://localhost/phpmyadmin
+No menu à esquerda, clica em Novo (New) e cria uma base de dados chamada exatamente:
+
+
+   biblioteca
+
+
+Com a base de dados biblioteca selecionada, clica no separador Importar (Import).
+Clica em Escolher ficheiro e seleciona o ficheiro biblioteca.sql que vem dentro da pasta do projeto.
+Clica em Executar (Go), no fundo da página.
+
+
+Isto cria automaticamente as tabelas livro, autor, leitor, emprestimo e livro_autor, já com alguns dados de exemplo.
+
+
+⚠️ Usa o ficheiro biblioteca.sql (não o database.sql, que é apenas a estrutura sem dados, para referência).
+
+
+
+5. Verificar a ligação (config.php)
+
+O ficheiro config.php, na raiz do projeto, já vem configurado para as predefinições do XAMPP:
+
+php$servername = "localhost";
+$username   = "root";
+$password   = "";
+$dbname     = "biblioteca";
+
+Se o MySQL do teu XAMPP tiver password definida para o utilizador root (normalmente não tem), muda a linha $password = ""; para a password correta.
+
+6. Abrir o site
+
+No navegador, acede a:
+
+http://localhost/AdriTeca/
+
+Deve aparecer o painel inicial da biblioteca, com o total de livros, autores, leitores e empréstimos.
+
+Estrutura do projeto
+
+AdriTeca/
+├── index.php              → Página inicial (dashboard)
+├── config.php             → Configuração da ligação à base de dados
+├── database.sql           → Apenas a estrutura das tabelas (sem dados)
+├── biblioteca.sql         → Base de dados completa a importar (estrutura + dados)
+├── assets/style.css       → Estilos do site
+├── image/icon.png         → Ícone
+├── includes/              → Cabeçalho e rodapé comuns a todas as páginas
+├── livros/                → Listar, adicionar, editar e apagar livros
+├── autores/               → Listar, adicionar, editar e apagar autores
+├── leitores/              → Listar, adicionar, editar e apagar leitores
+├── emprestimos/           → Listar, adicionar, editar e apagar empréstimos
+└── livro_autor/           → Associação entre livros e autores
+
+>>>>>>> Stashed changes

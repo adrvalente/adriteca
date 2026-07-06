@@ -301,3 +301,69 @@ tbody tr:hover { background: #fafaff; }
     .sidebar { width: 100%; height: auto; position: relative; }
     .conteudo { padding: 24px; }
 }
+<<<<<<< Updated upstream
+=======
+
+/* Pesquisa e paginação */
+.pesquisa-cartao {
+    padding: 18px;
+}
+
+.form-pesquisa {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-pesquisa input {
+    flex: 1;
+    min-width: 240px;
+    padding: 10px 13px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    font-size: 0.93rem;
+    font-family: inherit;
+}
+
+.resultado-contador {
+    margin: 12px 0 0;
+    color: var(--cor-texto-suave);
+    font-size: 0.9rem;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.pagina-link {
+    min-width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    background: #fff;
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.88rem;
+}
+
+.pagina-link:hover,
+.pagina-link.ativo {
+    background: var(--cor-primaria);
+    color: #fff;
+    border-color: var(--cor-primaria);
+}
+
+.alerta p {
+    margin: 4px 0;
+}
+>>>>>>> Stashed changes
